@@ -1,0 +1,10 @@
+{% extends "bootstrap.html" %}
+{% block title %}Session Site - Preferences{% endblock %}
+{% block pagetitle %}Preferences{% endblock %}
+{% block style %}{% endblock %}
+{% block content %}
+<form action="/preferences" method="POST">
+    <input type="submit" name="submit_button" value="Light Mode" />
+    <input type="submit" name="submit_button" value="Dark Mode" />
+</form>
+{% endblock %}
