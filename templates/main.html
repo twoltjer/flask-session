@@ -1,0 +1,15 @@
+{% extends "bootstrap.html" %}
+{% block title %}Markdown Converter{% endblock %}
+{% block pagetitle %}Markdown Converter{% endblock %}
+{% block style %}<link href="/static/styles/main.css" rel="stylesheet" type="text/css" />{% endblock %}
+{% block content %}
+<p>Enter some markdown below:</p>
+<form action="/" method="post">
+    <textarea id="md_input" name="md_input" >{{ md_raw }}</textarea>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+
+
+<!-- Needed some help figuring out how to render a string variable: https://stackoverflow.com/a/35215981/3315231 -->
+{{ md_html | safe }}
+{% endblock %}

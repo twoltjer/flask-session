@@ -1,0 +1,24 @@
+.content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffffcc;
+    padding: 3em;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+.page-title {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+body {
+    /* background-image: url("/static/images/soup-bg.jpg"); */
+   /* background-size: cover; */
+}
+.footer {
+  width: 100%;
+    position: fixed;
+    bottom: 0;
+    min-height: 60px;
+}
